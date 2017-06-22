@@ -54,12 +54,12 @@ div.gallery {
     border: 0px solid #ccc;
 }
 div.gallery img {
-    width: 70%;
-    height: 70% auto;
+    width: 60%;
+    height: auto;
 }
 
 div.desc {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -88,6 +88,6 @@ div.desc {
 
 .clearfix:after {
     content: "";
-    display: table;
+    display: footer;
     clear: both;
 }
