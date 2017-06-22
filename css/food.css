@@ -42,8 +42,8 @@ ul.posts li {
     list-style: none;
 }
 
-img.resize {
-    max-width:100%; /* you can use % */
+img {
+    max-width: 100%; /* you can use % */
     height: auto;
 }
 
@@ -51,8 +51,8 @@ div.gallery {
     border: 0px solid #ccc;
 }
 div.gallery img {
-    max-width: 100%;
-    height: auto;
+    max-width: auto;
+    max-height: 100%;
 }
 
 div.desc {
@@ -85,6 +85,6 @@ div.desc {
 
 .clearfix:after {
     content: "";
-    display: footer;
+    display: body;
     clear: both;
 }
