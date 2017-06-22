@@ -54,12 +54,12 @@ div.gallery {
     border: 1px solid #ccc;
 }
 div.gallery img {
-    width: 100%;
-    height: auto;
+    width: 70%;
+    height: 70%;
 }
 
 div.desc {
-    padding: 15px;
+    padding: 0px;
     text-align: center;
 }
 
