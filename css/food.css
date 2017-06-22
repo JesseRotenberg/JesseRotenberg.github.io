@@ -42,19 +42,16 @@ ul.posts li {
     list-style: none;
 }
 
-img {
-    width:70%;
-}
-
-img {
-    height:70%;
+img.resize {
+    max-width:100%; /* you can use % */
+    height: auto;
 }
 
 div.gallery {
     border: 0px solid #ccc;
 }
 div.gallery img {
-    width: 60%;
+    max-width: 100%;
     height: auto;
 }
 
