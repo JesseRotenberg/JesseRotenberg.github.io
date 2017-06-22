@@ -43,7 +43,7 @@ ul.posts li {
 }
 
 img {
-    max-width: 100%; /* you can use % */
+    max-width: 100%;
     height: auto;
 }
 
@@ -55,7 +55,7 @@ div.gallery img {
     max-height: 100%;
 }
 
-div.desc {
+/*div.desc {
     padding: 10px;
     text-align: center;
 }
@@ -68,12 +68,12 @@ div.desc {
     padding: 0 6px;
     flex: auto;
     width: 24.99999%;
-}
+}*/
 
 @media only screen and (max-width: 700px){
     .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
+        flex-direction: row;
+        flex: 0 0 ;
     }
 }
 
@@ -87,4 +87,11 @@ div.desc {
     content: "";
     display: table;
     clear: both;
+}
+
+.flexy {
+    display: flex;
+    flex: 4;
+    min-width: 100%;
+    flex-direction: column;
 }
