@@ -66,7 +66,7 @@ div.desc {
 
 .responsive {
     padding: 0 6px;
-    float: left;
+    flex: auto;
     width: 24.99999%;
 }
 
@@ -85,6 +85,6 @@ div.desc {
 
 .clearfix:after {
     content: "";
-    display: body;
+    display: table;
     clear: both;
 }
