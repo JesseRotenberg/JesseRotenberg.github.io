@@ -91,7 +91,6 @@ div.gallery img {
 
 .flexy {
     display: flex;
-    flex: 4;
-    min-width: 100%;
+    flex: 0 0 12em;
     flex-direction: column;
 }
