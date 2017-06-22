@@ -51,8 +51,8 @@ div.gallery {
     border: 0px solid #ccc;
 }
 div.gallery img {
-    max-width: auto;
-    max-height: 100%;
+    max-width: 100%;
+    max-height: auto;
 }
 
 /*div.desc {
@@ -63,12 +63,12 @@ div.gallery img {
 * {
     box-sizing: border-box;
 }
-
+*/
 .responsive {
     padding: 0 6px;
     flex: auto;
     width: 24.99999%;
-}*/
+}
 
 @media only screen and (max-width: 700px){
     .responsive {
@@ -91,6 +91,6 @@ div.gallery img {
 
 .flexy {
     display: flex;
-    flex: 0 0 12em;
-    flex-direction: column;
+    flex: 0 0 4em;
+    flex-direction: row;
 }
