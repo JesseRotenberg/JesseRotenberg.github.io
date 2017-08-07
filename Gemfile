@@ -5,49 +5,6 @@ gem 'github-pages', group: :jekyll_plugins
 gem "rake", "~> 12.0"
 
 
-group :test do
-  gem "codeclimate-test-reporter", "~> 1.0.5"
-  gem "cucumber", "~> 2.1"
-  gem "jekyll_test_plugin"
-  gem "jekyll_test_plugin_malicious"
-  # nokogiri v1.8 does not work with ruby 2.1 and below
-  gem "nokogiri", RUBY_VERSION >= "2.2" ? "~> 1.7" : "~> 1.7.0"
-  gem "rspec"
-  gem "rspec-mocks"
-  gem "rubocop", "~> 0.49.1"
-  gem "test-dependency-theme", :path => File.expand_path("test/fixtures/test-dependency-theme", __dir__)
-  gem "test-theme", :path => File.expand_path("test/fixtures/test-theme", __dir__)
-
-  gem "jruby-openssl" if RUBY_ENGINE == "jruby"
-end
-
-#
-
-group :test_legacy do
-  if RUBY_PLATFORM =~ %r!cygwin! || RUBY_VERSION.start_with?("2.2")
-    gem "test-unit"
-  end
-
-  gem "minitest"
-  gem "minitest-profile"
-  gem "minitest-reporters"
-  gem "redgreen"
-  gem "shoulda"
-  gem "simplecov"
-end
-
-#
-
-group :benchmark do
-  if ENV["BENCHMARK"]
-    gem "benchmark-ips"
-    gem "rbtrace"
-    gem "ruby-prof"
-    gem "stackprof"
-  end
-end
-
-#
 
 group :jekyll_optional_dependencies do
   gem "coderay", "~> 1.1.0"
