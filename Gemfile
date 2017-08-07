@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 gemspec :name => "jekyll"
-
+gem 'github-pages', group: :jekyll_plugins
 gem "rake", "~> 12.0"
 
 # Dependency of jekyll-mentions. RubyGems in Ruby 2.1 doesn't shield us from this.
