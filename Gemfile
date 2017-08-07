@@ -1,23 +1,9 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-gemspec :name => "jekyll"
 gem 'github-pages', group: :jekyll_plugins
 gem "rake", "~> 12.0"
 
-# Dependency of jekyll-mentions. RubyGems in Ruby 2.1 doesn't shield us from this.
-gem "activesupport", "~> 4.2", :groups => [:test_legacy, :site] if RUBY_VERSION < "2.2.2"
-
-group :development do
-  gem "launchy", "~> 2.3"
-  gem "pry"
-
-  unless RUBY_ENGINE == "jruby"
-    gem "pry-byebug"
-  end
-end
-
-#
 
 group :test do
   gem "codeclimate-test-reporter", "~> 1.0.5"
