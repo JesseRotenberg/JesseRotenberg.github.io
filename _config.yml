@@ -1,13 +1,41 @@
-name: something witty
-description: something witty
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+title: an oasis of horror in a desert of boredom
+description: something witty by Jesse Rotenberg
 author: Jesse
 author_email: rotenberg.jesse@gmail.com
+github_username: JesseRotenberg
+facebook_username: jm.rotenberg
+facebook_name: Jesse Rotenberg
+timezone: America/Toronto
+locale: en_CA
 baseurl:
 url: http://jrotenberg.me/
 permalink: pretty
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+
+# Build settings
+# Will go here
+markdown: kramdown
+theme: minima
+plugins:
+
+  
 defaults:
-  - scope:
-      path: "food"
-    values:
-      image: true
+ #  _posts
+ - scope:
+     path: " _posts"
+     type: posts
+     layout: posts
+   # read_time: true # ya ya, maybe one day
+
+# food
+# - scope:
+#    path: "food"
+#    values:
+#    image: true
